@@ -53,9 +53,11 @@ apps during builds. This is a starting allocation, not a measured minimum. Model
 inference inside these Linux containers will use CPU. A future native macOS
 embedding run can use PyTorch MPS after testing compatibility.
 
-The root `.env.example` documents optional port and credential overrides. Compose
-works with defaults without copying it. Custom credentials must be set before
-the first database start; changing environment variables later does not change
+Credentials are **not** stored in this repository. Copy `.env.example` to a
+gitignored `.env` and fill in `MONGO_USERNAME` and `MONGO_PASSWORD` before
+starting; Compose refuses to start while either is empty. `.env.example`
+documents the optional port, database-name and image-name overrides. Set the
+credentials before the first database start; changing them later does not change
 users already stored in the MongoDB volume.
 
 ### Connections
@@ -64,8 +66,10 @@ users already stored in the MongoDB volume.
 - MongoDB Compass on your Mac can use this **local-development** connection:
 
   ```text
-  mongodb://sakti:REDACTED-LOCAL-PASSWORD@localhost:27017/sakti_sahayak?authSource=admin&directConnection=true
+  mongodb://<MONGO_USERNAME>:<MONGO_PASSWORD>@localhost:27017/sakti_sahayak?authSource=admin&directConnection=true
   ```
+
+Use the values from your local `.env`.
 
 These development credentials and all published ports are limited to localhost.
 They are not appropriate for an internet-facing deployment. You do not need to

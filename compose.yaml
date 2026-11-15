@@ -5,8 +5,8 @@ services:
     image: ${MONGODB_IMAGE:-mongodb/mongodb-atlas-local:8.0}
     hostname: mongodb
     environment:
-      MONGODB_INITDB_ROOT_USERNAME: ${MONGO_USERNAME:-sakti}
-      MONGODB_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:-REDACTED-LOCAL-PASSWORD}
+      MONGODB_INITDB_ROOT_USERNAME: "${MONGO_USERNAME:?set MONGO_USERNAME in .env (copy .env.example)}"
+      MONGODB_INITDB_ROOT_PASSWORD: "${MONGO_PASSWORD:?set MONGO_PASSWORD in .env (copy .env.example)}"
     ports:
       - "127.0.0.1:${MONGODB_PORT:-27017}:27017"
     volumes:
@@ -22,8 +22,8 @@ services:
     environment:
       MONGODB_HOST: mongodb
       MONGODB_PORT: "27017"
-      MONGODB_USERNAME: ${MONGO_USERNAME:-sakti}
-      MONGODB_PASSWORD: ${MONGO_PASSWORD:-REDACTED-LOCAL-PASSWORD}
+      MONGODB_USERNAME: "${MONGO_USERNAME:?set MONGO_USERNAME in .env (copy .env.example)}"
+      MONGODB_PASSWORD: "${MONGO_PASSWORD:?set MONGO_PASSWORD in .env (copy .env.example)}"
       MONGODB_DB: ${MONGODB_DB:-sakti_sahayak}
       CORPUS_DIR: /app/data/raw
       REPORTS_DIR: /app/data/reports

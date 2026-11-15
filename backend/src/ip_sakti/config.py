@@ -35,8 +35,8 @@ class Settings:
                 f"mongodb://{os.getenv('MONGODB_HOST', 'localhost')}:"
                 f"{os.getenv('MONGODB_PORT', '27017')}/?directConnection=true"
             ),
-            mongodb_username=None if uri else os.getenv("MONGODB_USERNAME", "sakti"),
-            mongodb_password=None if uri else os.getenv("MONGODB_PASSWORD", "REDACTED-LOCAL-PASSWORD"),
+            mongodb_username=None if uri else os.getenv("MONGODB_USERNAME"),
+            mongodb_password=None if uri else os.getenv("MONGODB_PASSWORD"),
             database=os.getenv("MONGODB_DB", "sakti_sahayak"),
             corpus_dir=Path(os.getenv("CORPUS_DIR", str(project_dir / "data/raw"))),
             reports_dir=Path(os.getenv("REPORTS_DIR", str(project_dir / "data/reports"))),
