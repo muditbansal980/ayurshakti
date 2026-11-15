@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"question": "What designs cannot be registered because they are not new or original?", "jurisdiction": "india", "expected_title": "Designs Act, 2000", "expected_locator": "Section 4", "language": "en"},
+    {"question": "नए या मौलिक नहीं होने पर किन डिजाइनों का पंजीकरण निषिद्ध है?", "jurisdiction": "india", "expected_title": "Designs Act, 2000", "expected_locator": "Section 4", "language": "hi"},
+    {"question": "What are the absolute grounds for refusal of registration of a trade mark?", "jurisdiction": "india", "expected_title": "The Trade Marks Act, 1999", "expected_locator": "Section 9", "language": "en"},
+    {"question": "व्यापार चिह्न का पंजीकरण अस्वीकार करने के पूर्ण आधार क्या हैं?", "jurisdiction": "india", "expected_title": "The Trade Marks Act, 1999", "expected_locator": "Section 9", "language": "hi"},
+    {"question": "What is the duration and renewal of registration of a geographical indication?", "jurisdiction": "india", "expected_title": "Geographical Indications of Goods (Registration & Protection) Act, 1999", "expected_locator": "Section 18", "language": "en"},
+    {"question": "भौगोलिक संकेत के पंजीकरण की अवधि और नवीनीकरण के प्रावधान क्या हैं?", "jurisdiction": "india", "expected_title": "Geographical Indications of Goods (Registration & Protection) Act, 1999", "expected_locator": "Section 18", "language": "hi"}
+  ]
+}

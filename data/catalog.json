@@ -1,0 +1,96 @@
+{
+  "documents": [
+    {
+      "sha256": "4d4a3e712a6db1cf274115568d2dc7e3f4f41caa6e316257b1825cbb7e4c6666",
+      "title": "The Patents Rules, 2003",
+      "kind": "rules",
+      "jurisdiction": "india",
+      "language": "en",
+      "source_url": null,
+      "review_status": "needs_review",
+      "version_label": "Unverified consolidation; check original document and subsequent amendments"
+    },
+    {
+      "sha256": "729b07e581fe55319adcbf48fadb3b7d30293033a9a1550e70fc6adfb4ecb45f",
+      "title": "Biological Diversity Act, 2002",
+      "kind": "act",
+      "jurisdiction": "india",
+      "language": "en",
+      "source_url": null,
+      "review_status": "needs_review",
+      "version_label": "Unverified consolidation; check original document and subsequent amendments"
+    },
+    {
+      "sha256": "1defce918d9a51a7d8f49417c93787cf25a1184e98fa0497d3559825db0e908d",
+      "title": "Copyright Act, 1957",
+      "kind": "act",
+      "jurisdiction": "india",
+      "language": "en",
+      "source_url": null,
+      "review_status": "needs_review",
+      "version_label": "Unverified consolidation; check original document and subsequent amendments"
+    },
+    {
+      "sha256": "ffd844f0ba5ab18fafa347f6bc46b04e1394623c9b8a29d4dde90339eb655c5b",
+      "title": "Copyright Rules, 2013",
+      "kind": "rules",
+      "jurisdiction": "india",
+      "language": "en",
+      "source_url": null,
+      "review_status": "needs_review",
+      "version_label": "Unverified consolidation; check original document and subsequent amendments"
+    },
+    {
+      "sha256": "25d76416d93f1c4b510189f8857941a8228437f7494382b228fdbd74e9e87be5",
+      "title": "Designs Act, 2000",
+      "kind": "act",
+      "jurisdiction": "india",
+      "language": "en",
+      "source_url": null,
+      "review_status": "needs_review",
+      "version_label": "Unverified consolidation; check original document and subsequent amendments"
+    },
+    {
+      "sha256": "049515caf90026ce4d4ce34bed2059d2502326f8795f9c1da2afa60fcaff12fc",
+      "title": "Geographical Indications of Goods (Registration & Protection) Act, 1999",
+      "kind": "act",
+      "jurisdiction": "india",
+      "language": "en",
+      "source_url": null,
+      "review_status": "needs_review",
+      "version_label": "Unverified consolidation; check original document and subsequent amendments"
+    },
+    {
+      "sha256": "61f79666a010ec619de7b1317607143ef570505ba36210d5f87b3236d9fe3450",
+      "title": "Geographical Indications of Goods (Registration & Protection) Rules, 2002",
+      "kind": "rules",
+      "jurisdiction": "india",
+      "language": "en",
+      "source_url": null,
+      "review_status": "needs_review",
+      "version_label": "Unverified consolidation; check original document and subsequent amendments"
+    },
+    {
+      "sha256": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+      "title": "The Trade Marks Act, 1999",
+      "kind": "act",
+      "jurisdiction": "india",
+      "language": "en",
+      "source_url": null,
+      "review_status": "needs_review",
+      "version_label": "Unverified consolidation; check original document and subsequent amendments"
+    },
+    {
+      "sha256": "bec6654e20a358a5949d828689e6cee02b3aed0286fb1be918af0fb96a0cca22",
+      "title": "WIPO GRATK Diplomatic Conference Final Act (2024)",
+      "kind": "guidance",
+      "jurisdiction": "international",
+      "language": "en",
+      "source_url": "https://www.wipo.int/edocs/mdocs/diplconf/en/gratk_dc/gratk_dc_9.pdf",
+      "resolved_url": "https://www.wipo.int/edocs/mdocs/diplconf/en/gratk_dc/gratk_dc_9.pdf",
+      "fetched_at": "2026-11-14T18:52:54.135291+00:00",
+      "review_status": "needs_review",
+      "version_label": "Final Act of diplomatic conference, 2024; not the full treaty text"
+    }
+  ]
+}

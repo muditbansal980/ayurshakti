@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "title": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022",
+      "url": "https://www.fssai.gov.in/upload/notifications/2022/05/62789a20b54bdGazette_Notification_Ayurveda_Aahara_09_05_2022.pdf",
+      "jurisdiction": "india",
+      "kind": "rules",
+      "language": "hi-en",
+      "version_label": "2022 notification; subsequent amendments and advisories require review"
+    },
+    {
+      "title": "WIPO GRATK Diplomatic Conference Final Act (2024)",
+      "url": "https://www.wipo.int/edocs/mdocs/diplconf/en/gratk_dc/gratk_dc_9.pdf",
+      "jurisdiction": "international",
+      "kind": "guidance",
+      "language": "en",
+      "version_label": "Final Act of diplomatic conference, 2024; not the full treaty text"
+    },
+    {
+      "title": "The Patents Act, 1970",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/1392/1/a197039.pdf",
+      "jurisdiction": "india",
+      "kind": "act",
+      "language": "en",
+      "version_label": "India Code download; consolidation date and subsequent amendments require review"
+    }
+  ]
+}

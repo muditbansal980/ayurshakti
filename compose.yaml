@@ -1,0 +1,68 @@
+name: ip-sakti-sahayak
+
+services:
+  mongodb:
+    image: ${MONGODB_IMAGE:-mongodb/mongodb-atlas-local:8.0}
+    hostname: mongodb
+    environment:
+      MONGODB_INITDB_ROOT_USERNAME: ${MONGO_USERNAME:-sakti}
+      MONGODB_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:-REDACTED-LOCAL-PASSWORD}
+    ports:
+      - "127.0.0.1:${MONGODB_PORT:-27017}:27017"
+    volumes:
+      - mongo_data:/data/db
+      - mongo_config:/data/configdb
+      - mongo_search:/data/mongot
+    # The image's own healthcheck checks both MongoDB and its search process.
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+    environment:
+      MONGODB_HOST: mongodb
+      MONGODB_PORT: "27017"
+      MONGODB_USERNAME: ${MONGO_USERNAME:-sakti}
+      MONGODB_PASSWORD: ${MONGO_PASSWORD:-REDACTED-LOCAL-PASSWORD}
+      MONGODB_DB: ${MONGODB_DB:-sakti_sahayak}
+      CORPUS_DIR: /app/data/raw
+      REPORTS_DIR: /app/data/reports
+      PROCESSED_DIR: /app/data/processed
+      CORPUS_CATALOG: /app/data/catalog.json
+      HF_HOME: /app/model-cache
+      EMBEDDING_DEVICE: cpu
+      TOKENIZERS_PARALLELISM: "false"
+    ports:
+      - "127.0.0.1:${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ./data/raw:/app/data/raw:ro
+      - ./data/reports:/app/data/reports
+      - ./data/processed:/app/data/processed
+      - ./data/catalog.json:/app/data/catalog.json:ro
+      - ./data/evaluation.json:/app/data/evaluation.json:ro
+      - model_cache:/app/model-cache
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=5)"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./dashboard
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-3000}:3000"
+    # The existing UI stays independent of corpus retrieval for this phase.
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
+  mongo_config:
+  mongo_search:
+  model_cache:
+
