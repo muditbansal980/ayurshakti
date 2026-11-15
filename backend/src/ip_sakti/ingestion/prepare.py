@@ -16,18 +16,35 @@ def write_json(path: Path, value: dict) -> None:
     temporary.replace(path)
 
 
-def prepare_corpus(settings, tokenizer, *, ocr=False, target_tokens=384) -> dict:
+def prepare_corpus(settings, tokenizer, *, ocr=False, target_tokens=384, document_id=None) -> dict:
     catalog = json.loads(settings.catalog_path.read_text(encoding="utf-8"))
     entries = {entry["sha256"]: entry for entry in catalog["documents"]}
+    if document_id is not None and document_id not in entries:
+        raise ValueError("Document ID is not registered in the corpus catalog.")
     report = {"created_at": datetime.now(timezone.utc).isoformat(), "prepared": [], "skipped_duplicates": [], "failed": []}
+    # Incremental preparation preserves earlier manifest entries, including
+    # explicit failures. Originals and existing Mongo generations stay untouched.
+    previous_manifest = settings.processed_dir / "manifest.json"
+    if document_id is not None and previous_manifest.exists():
+        previous = json.loads(previous_manifest.read_text())
+        report["prepared"] = [entry for entry in previous["prepared"]
+                              if entry["bundle"] != f"{document_id}.json"]
+        report["skipped_duplicates"] = previous.get("skipped_duplicates", [])
+        report["failed"] = previous.get("failed", [])
     seen = set()
+    found = False
     for path in sorted(settings.corpus_dir.rglob("*.pdf")):
         digest = sha256_file(path)
+        if document_id is not None and digest != document_id:
+            continue
+        found = True
         relative = str(path.relative_to(settings.corpus_dir))
         if digest in seen:
             report["skipped_duplicates"].append(relative)
             continue
         seen.add(digest)
+        if document_id is not None:
+            report["failed"] = [entry for entry in report["failed"] if entry["file"] != relative]
         try:
             if digest not in entries:
                 raise ValueError("Missing content hash in data/catalog.json; register source metadata first.")
@@ -55,6 +72,8 @@ def prepare_corpus(settings, tokenizer, *, ocr=False, target_tokens=384) -> dict
                                        "children": len(children), "warnings": warnings})
         except (ValueError, OSError, KeyError) as error:
             report["failed"].append({"file": relative, "reason": str(error)})
+    if document_id is not None and not found:
+        raise ValueError("Registered source PDF was not found; manifest was not changed.")
     write_json(settings.processed_dir / "manifest.json", report)
     return report
 

@@ -40,6 +40,7 @@ services:
       - ./data/processed:/app/data/processed
       - ./data/catalog.json:/app/data/catalog.json:ro
       - ./data/evaluation.json:/app/data/evaluation.json:ro
+      - ./data/evaluation-bilingual.json:/app/data/evaluation-bilingual.json:ro
       - model_cache:/app/model-cache
     depends_on:
       mongodb:

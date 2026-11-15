@@ -1,0 +1,767 @@
+{
+  "schema_version": 1,
+  "judgment_unit": "persisted_parent_id",
+  "label_status": "authored_provisional_manual_review_needed",
+  "cases": [
+    {
+      "id": "en_en_design",
+      "category": "en_en",
+      "query": "What makes a design ineligible for registration because it is not new or original?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7dd6f10a29d16486216da6220b82d0d258025f986afefae1f9d15885e569897f",
+          "document_id": "25d76416d93f1c4b510189f8857941a8228437f7494382b228fdbd74e9e87be5",
+          "chunk_ids": [
+            "558072176d8d3e2e0251c7d16f13d25f89b7e2af9ea988e7a8bb5e26957cb5b3"
+          ],
+          "generation": "36719a0c810c608822b0477a7f7e65953afc14145231afc85a6533e45bc8af09",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 4",
+          "title": "Designs Act, 2000",
+          "evidence_excerpt": "4. Prohibition of registration of certain designs.—A design which—\n(a) is not new or original; or\n(b) has been disclosed to the public anywhere in India or in any other country by publication in\ntangible form or by use or in any other way prior to the filing date, or where applicable, the priority\ndate of the application for registration; or\n(c) is not significantly distinguishable from known designs or combination of known designs; or\n(d) comprises or contains scandalous or obscene matter,\nshall not be registered.\n"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "hi_en_design",
+      "category": "hi_en",
+      "query": "नया या मौलिक नहीं होने पर डिजाइन का पंजीकरण क्यों निषिद्ध है?",
+      "query_language": "hi",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7dd6f10a29d16486216da6220b82d0d258025f986afefae1f9d15885e569897f",
+          "document_id": "25d76416d93f1c4b510189f8857941a8228437f7494382b228fdbd74e9e87be5",
+          "chunk_ids": [
+            "558072176d8d3e2e0251c7d16f13d25f89b7e2af9ea988e7a8bb5e26957cb5b3"
+          ],
+          "generation": "36719a0c810c608822b0477a7f7e65953afc14145231afc85a6533e45bc8af09",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 4",
+          "title": "Designs Act, 2000",
+          "evidence_excerpt": "4. Prohibition of registration of certain designs.—A design which—\n(a) is not new or original; or\n(b) has been disclosed to the public anywhere in India or in any other country by publication in\ntangible form or by use or in any other way prior to the filing date, or where applicable, the priority\ndate of the application for registration; or\n(c) is not significantly distinguishable from known designs or combination of known designs; or\n(d) comprises or contains scandalous or obscene matter,\nshall not be registered.\n"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "mixed_design",
+      "category": "mixed",
+      "query": "Design registration में नया या original होना क्यों जरूरी है?",
+      "query_language": "hi-en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7dd6f10a29d16486216da6220b82d0d258025f986afefae1f9d15885e569897f",
+          "document_id": "25d76416d93f1c4b510189f8857941a8228437f7494382b228fdbd74e9e87be5",
+          "chunk_ids": [
+            "558072176d8d3e2e0251c7d16f13d25f89b7e2af9ea988e7a8bb5e26957cb5b3"
+          ],
+          "generation": "36719a0c810c608822b0477a7f7e65953afc14145231afc85a6533e45bc8af09",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 4",
+          "title": "Designs Act, 2000",
+          "evidence_excerpt": "4. Prohibition of registration of certain designs.—A design which—\n(a) is not new or original; or\n(b) has been disclosed to the public anywhere in India or in any other country by publication in\ntangible form or by use or in any other way prior to the filing date, or where applicable, the priority\ndate of the application for registration; or\n(c) is not significantly distinguishable from known designs or combination of known designs; or\n(d) comprises or contains scandalous or obscene matter,\nshall not be registered.\n"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "transliteration_design",
+      "category": "transliteration",
+      "query": "Naya ya maulik nahin hone par design ka panjikaran kyon mana hai?",
+      "query_language": "hi-Latn",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7dd6f10a29d16486216da6220b82d0d258025f986afefae1f9d15885e569897f",
+          "document_id": "25d76416d93f1c4b510189f8857941a8228437f7494382b228fdbd74e9e87be5",
+          "chunk_ids": [
+            "558072176d8d3e2e0251c7d16f13d25f89b7e2af9ea988e7a8bb5e26957cb5b3"
+          ],
+          "generation": "36719a0c810c608822b0477a7f7e65953afc14145231afc85a6533e45bc8af09",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 4",
+          "title": "Designs Act, 2000",
+          "evidence_excerpt": "4. Prohibition of registration of certain designs.—A design which—\n(a) is not new or original; or\n(b) has been disclosed to the public anywhere in India or in any other country by publication in\ntangible form or by use or in any other way prior to the filing date, or where applicable, the priority\ndate of the application for registration; or\n(c) is not significantly distinguishable from known designs or combination of known designs; or\n(d) comprises or contains scandalous or obscene matter,\nshall not be registered.\n"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "en_en_trademark",
+      "category": "en_en",
+      "query": "What are the absolute grounds for refusal of registration of a trade mark?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6bbaa988e44649519359fcc0a05a5178db6dc000a126690a50db20476de684cb",
+          "document_id": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+          "chunk_ids": [
+            "d4638bd037f889fd19c85977fa56aaef791783af4b675cc9854c9a6c8f252ae7",
+            "cebee6d866051aea47f2f3c4466efbb063a91d3653a0ed2ffa0c96897857fcd1"
+          ],
+          "generation": "97ecd372feb6d137c0125b42c8d07821d84718a942c53edac904e01c518f6193",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 9",
+          "title": "The Trade Marks Act, 1999",
+          "evidence_excerpt": "9. Absolute grounds for refusal of registration.—(1) The trade marks—\n(a) which are devoid of any distinctive character, that is to say, not capable of distinguishing the\ngoods or services of one person from those of another person;\n(b) which consist exclusively of marks or indications which may serve in trade to designate the\nkind, quality, quantity, intended purpose, values, geographical origin or the time of production of the\ngoods or rendering of the service or other characteristics of the goods or service;\n(c) which consist exclusively of marks or indications which have become customary in the\ncurrent language or in the bona fide and established practices of the trade,\nshall not be regi"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "hi_en_trademark",
+      "category": "hi_en",
+      "query": "व्यापार चिह्न का पंजीकरण अस्वीकार करने के पूर्ण आधार क्या हैं?",
+      "query_language": "hi",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6bbaa988e44649519359fcc0a05a5178db6dc000a126690a50db20476de684cb",
+          "document_id": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+          "chunk_ids": [
+            "d4638bd037f889fd19c85977fa56aaef791783af4b675cc9854c9a6c8f252ae7",
+            "cebee6d866051aea47f2f3c4466efbb063a91d3653a0ed2ffa0c96897857fcd1"
+          ],
+          "generation": "97ecd372feb6d137c0125b42c8d07821d84718a942c53edac904e01c518f6193",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 9",
+          "title": "The Trade Marks Act, 1999",
+          "evidence_excerpt": "9. Absolute grounds for refusal of registration.—(1) The trade marks—\n(a) which are devoid of any distinctive character, that is to say, not capable of distinguishing the\ngoods or services of one person from those of another person;\n(b) which consist exclusively of marks or indications which may serve in trade to designate the\nkind, quality, quantity, intended purpose, values, geographical origin or the time of production of the\ngoods or rendering of the service or other characteristics of the goods or service;\n(c) which consist exclusively of marks or indications which have become customary in the\ncurrent language or in the bona fide and established practices of the trade,\nshall not be regi"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "mixed_trademark",
+      "category": "mixed",
+      "query": "Trade mark registration अस्वीकार करने के absolute grounds क्या हैं?",
+      "query_language": "hi-en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6bbaa988e44649519359fcc0a05a5178db6dc000a126690a50db20476de684cb",
+          "document_id": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+          "chunk_ids": [
+            "d4638bd037f889fd19c85977fa56aaef791783af4b675cc9854c9a6c8f252ae7",
+            "cebee6d866051aea47f2f3c4466efbb063a91d3653a0ed2ffa0c96897857fcd1"
+          ],
+          "generation": "97ecd372feb6d137c0125b42c8d07821d84718a942c53edac904e01c518f6193",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 9",
+          "title": "The Trade Marks Act, 1999",
+          "evidence_excerpt": "9. Absolute grounds for refusal of registration.—(1) The trade marks—\n(a) which are devoid of any distinctive character, that is to say, not capable of distinguishing the\ngoods or services of one person from those of another person;\n(b) which consist exclusively of marks or indications which may serve in trade to designate the\nkind, quality, quantity, intended purpose, values, geographical origin or the time of production of the\ngoods or rendering of the service or other characteristics of the goods or service;\n(c) which consist exclusively of marks or indications which have become customary in the\ncurrent language or in the bona fide and established practices of the trade,\nshall not be regi"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "transliteration_trademark",
+      "category": "transliteration",
+      "query": "Vyapar chihn ka panjikaran asvikar karne ke poorn aadhar kya hain?",
+      "query_language": "hi-Latn",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6bbaa988e44649519359fcc0a05a5178db6dc000a126690a50db20476de684cb",
+          "document_id": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+          "chunk_ids": [
+            "d4638bd037f889fd19c85977fa56aaef791783af4b675cc9854c9a6c8f252ae7",
+            "cebee6d866051aea47f2f3c4466efbb063a91d3653a0ed2ffa0c96897857fcd1"
+          ],
+          "generation": "97ecd372feb6d137c0125b42c8d07821d84718a942c53edac904e01c518f6193",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 9",
+          "title": "The Trade Marks Act, 1999",
+          "evidence_excerpt": "9. Absolute grounds for refusal of registration.—(1) The trade marks—\n(a) which are devoid of any distinctive character, that is to say, not capable of distinguishing the\ngoods or services of one person from those of another person;\n(b) which consist exclusively of marks or indications which may serve in trade to designate the\nkind, quality, quantity, intended purpose, values, geographical origin or the time of production of the\ngoods or rendering of the service or other characteristics of the goods or service;\n(c) which consist exclusively of marks or indications which have become customary in the\ncurrent language or in the bona fide and established practices of the trade,\nshall not be regi"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "en_en_gi",
+      "category": "en_en",
+      "query": "How long does geographical indication registration last and can it be renewed?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6957c2804ab90494e3b33640d1116c8a3fe24dd42cac6fda2b8fe560dd308555",
+          "document_id": "049515caf90026ce4d4ce34bed2059d2502326f8795f9c1da2afa60fcaff12fc",
+          "chunk_ids": [
+            "9ace5a41b85c7246dd62e97292c394b7169c02b4fac6e3bb971cc5f06ba76cfc",
+            "a532a05c09c9e5048a1c735cc7b6990701eb903ff697da33d08e59ed255fa7c5",
+            "3b1a057ec91a26d193ebd8c90866a8601553dbd6320c26a19f0c9a0da8e686d7"
+          ],
+          "generation": "caecdcbe462afdbc212ef654d9945d3c48deaabde82d8b3b9d34e24a93e01b9c",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 18",
+          "title": "Geographical Indications of Goods (Registration & Protection) Act, 1999",
+          "evidence_excerpt": "18. (1) The registration of a geographical indication shall\nbe for a period of ten years, but may be renewed from time\nto time in accordance with the provisions of this section.\n(2) The registration of an authorised user shall be for a\nperiod of ten years or for the period till the date on which\nthe registration of the geographical indication in respect of\nwhich the authorised user is registered expires, whichever\nis earlier.\n(3) The Registrar shall, on application made in the\nprescribed manner, by the registered proprietor or by the\nauthorised user and within the prescribed period and\nsubject to the payment of the prescribed fee, renew the\nregistration of the geographical indication or auth"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "hi_en_gi",
+      "category": "hi_en",
+      "query": "भौगोलिक संकेत का पंजीकरण कितने वर्षों तक रहता है और उसका नवीनीकरण कैसे होता है?",
+      "query_language": "hi",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6957c2804ab90494e3b33640d1116c8a3fe24dd42cac6fda2b8fe560dd308555",
+          "document_id": "049515caf90026ce4d4ce34bed2059d2502326f8795f9c1da2afa60fcaff12fc",
+          "chunk_ids": [
+            "9ace5a41b85c7246dd62e97292c394b7169c02b4fac6e3bb971cc5f06ba76cfc",
+            "a532a05c09c9e5048a1c735cc7b6990701eb903ff697da33d08e59ed255fa7c5",
+            "3b1a057ec91a26d193ebd8c90866a8601553dbd6320c26a19f0c9a0da8e686d7"
+          ],
+          "generation": "caecdcbe462afdbc212ef654d9945d3c48deaabde82d8b3b9d34e24a93e01b9c",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 18",
+          "title": "Geographical Indications of Goods (Registration & Protection) Act, 1999",
+          "evidence_excerpt": "18. (1) The registration of a geographical indication shall\nbe for a period of ten years, but may be renewed from time\nto time in accordance with the provisions of this section.\n(2) The registration of an authorised user shall be for a\nperiod of ten years or for the period till the date on which\nthe registration of the geographical indication in respect of\nwhich the authorised user is registered expires, whichever\nis earlier.\n(3) The Registrar shall, on application made in the\nprescribed manner, by the registered proprietor or by the\nauthorised user and within the prescribed period and\nsubject to the payment of the prescribed fee, renew the\nregistration of the geographical indication or auth"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "mixed_gi",
+      "category": "mixed",
+      "query": "Geographical indication का registration कितने years रहता है और renewal कैसे होता है?",
+      "query_language": "hi-en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6957c2804ab90494e3b33640d1116c8a3fe24dd42cac6fda2b8fe560dd308555",
+          "document_id": "049515caf90026ce4d4ce34bed2059d2502326f8795f9c1da2afa60fcaff12fc",
+          "chunk_ids": [
+            "9ace5a41b85c7246dd62e97292c394b7169c02b4fac6e3bb971cc5f06ba76cfc",
+            "a532a05c09c9e5048a1c735cc7b6990701eb903ff697da33d08e59ed255fa7c5",
+            "3b1a057ec91a26d193ebd8c90866a8601553dbd6320c26a19f0c9a0da8e686d7"
+          ],
+          "generation": "caecdcbe462afdbc212ef654d9945d3c48deaabde82d8b3b9d34e24a93e01b9c",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 18",
+          "title": "Geographical Indications of Goods (Registration & Protection) Act, 1999",
+          "evidence_excerpt": "18. (1) The registration of a geographical indication shall\nbe for a period of ten years, but may be renewed from time\nto time in accordance with the provisions of this section.\n(2) The registration of an authorised user shall be for a\nperiod of ten years or for the period till the date on which\nthe registration of the geographical indication in respect of\nwhich the authorised user is registered expires, whichever\nis earlier.\n(3) The Registrar shall, on application made in the\nprescribed manner, by the registered proprietor or by the\nauthorised user and within the prescribed period and\nsubject to the payment of the prescribed fee, renew the\nregistration of the geographical indication or auth"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "transliteration_gi",
+      "category": "transliteration",
+      "query": "Bhaugolik sanket ka panjikaran kitne varsh rahta hai aur navinikaran kaise hota hai?",
+      "query_language": "hi-Latn",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6957c2804ab90494e3b33640d1116c8a3fe24dd42cac6fda2b8fe560dd308555",
+          "document_id": "049515caf90026ce4d4ce34bed2059d2502326f8795f9c1da2afa60fcaff12fc",
+          "chunk_ids": [
+            "9ace5a41b85c7246dd62e97292c394b7169c02b4fac6e3bb971cc5f06ba76cfc",
+            "a532a05c09c9e5048a1c735cc7b6990701eb903ff697da33d08e59ed255fa7c5",
+            "3b1a057ec91a26d193ebd8c90866a8601553dbd6320c26a19f0c9a0da8e686d7"
+          ],
+          "generation": "caecdcbe462afdbc212ef654d9945d3c48deaabde82d8b3b9d34e24a93e01b9c",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 18",
+          "title": "Geographical Indications of Goods (Registration & Protection) Act, 1999",
+          "evidence_excerpt": "18. (1) The registration of a geographical indication shall\nbe for a period of ten years, but may be renewed from time\nto time in accordance with the provisions of this section.\n(2) The registration of an authorised user shall be for a\nperiod of ten years or for the period till the date on which\nthe registration of the geographical indication in respect of\nwhich the authorised user is registered expires, whichever\nis earlier.\n(3) The Registrar shall, on application made in the\nprescribed manner, by the registered proprietor or by the\nauthorised user and within the prescribed period and\nsubject to the payment of the prescribed fee, renew the\nregistration of the geographical indication or auth"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "en_en_bio",
+      "category": "en_en",
+      "query": "When is National Biodiversity Authority approval required for intellectual property based on Indian biological resources or associated traditional knowledge?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7b79d597991ac3570050f194ec6ed027d277c3ec75501e2236fa14fcdd89ce68",
+          "document_id": "729b07e581fe55319adcbf48fadb3b7d30293033a9a1550e70fc6adfb4ecb45f",
+          "chunk_ids": [
+            "ced15e37313dff6c33565a53d15d22cfac589a45e2275bc34698cf3c0269fee0",
+            "90bc2f4c6e202d6a4a15bbd80acfbc803c6f8ae603180164ac03d1f3f452d13c"
+          ],
+          "generation": "70a7ac71359a4b0302517a2772e7964eac39700cabd34318f086b7f7a9a2c447",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 6",
+          "title": "Biological Diversity Act, 2002",
+          "evidence_excerpt": "6. Application for intellectual property rights not to be made without approval of National\nBiodiversity Authority.—1[(1) Any person or entity covered under sub -section (2) of section 3 applying\nfor an intellectual property right, by whatever name called, in or outside India, for any invention based on\nany research or information on a biological resource w hich is accessed from India, including those\ndeposited in repositories outside India, or traditional knowledge associated thereto, shall obtain prior\napproval of the National Biodiversity Authority before grant of such intellectual property rights.\n(1A) Any person covered under section 7 applying for any intellectual property right, by wh"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "hi_en_bio",
+      "category": "hi_en",
+      "query": "भारतीय जैव संसाधनों या संबंधित पारंपरिक ज्ञान पर आधारित बौद्धिक संपदा के लिए राष्ट्रीय जैव विविधता प्राधिकरण की मंजूरी कब जरूरी है?",
+      "query_language": "hi",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7b79d597991ac3570050f194ec6ed027d277c3ec75501e2236fa14fcdd89ce68",
+          "document_id": "729b07e581fe55319adcbf48fadb3b7d30293033a9a1550e70fc6adfb4ecb45f",
+          "chunk_ids": [
+            "ced15e37313dff6c33565a53d15d22cfac589a45e2275bc34698cf3c0269fee0",
+            "90bc2f4c6e202d6a4a15bbd80acfbc803c6f8ae603180164ac03d1f3f452d13c"
+          ],
+          "generation": "70a7ac71359a4b0302517a2772e7964eac39700cabd34318f086b7f7a9a2c447",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 6",
+          "title": "Biological Diversity Act, 2002",
+          "evidence_excerpt": "6. Application for intellectual property rights not to be made without approval of National\nBiodiversity Authority.—1[(1) Any person or entity covered under sub -section (2) of section 3 applying\nfor an intellectual property right, by whatever name called, in or outside India, for any invention based on\nany research or information on a biological resource w hich is accessed from India, including those\ndeposited in repositories outside India, or traditional knowledge associated thereto, shall obtain prior\napproval of the National Biodiversity Authority before grant of such intellectual property rights.\n(1A) Any person covered under section 7 applying for any intellectual property right, by wh"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "mixed_bio",
+      "category": "mixed",
+      "query": "Indian biological resources या traditional knowledge पर IP के लिए NBA approval कब चाहिए?",
+      "query_language": "hi-en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7b79d597991ac3570050f194ec6ed027d277c3ec75501e2236fa14fcdd89ce68",
+          "document_id": "729b07e581fe55319adcbf48fadb3b7d30293033a9a1550e70fc6adfb4ecb45f",
+          "chunk_ids": [
+            "ced15e37313dff6c33565a53d15d22cfac589a45e2275bc34698cf3c0269fee0",
+            "90bc2f4c6e202d6a4a15bbd80acfbc803c6f8ae603180164ac03d1f3f452d13c"
+          ],
+          "generation": "70a7ac71359a4b0302517a2772e7964eac39700cabd34318f086b7f7a9a2c447",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 6",
+          "title": "Biological Diversity Act, 2002",
+          "evidence_excerpt": "6. Application for intellectual property rights not to be made without approval of National\nBiodiversity Authority.—1[(1) Any person or entity covered under sub -section (2) of section 3 applying\nfor an intellectual property right, by whatever name called, in or outside India, for any invention based on\nany research or information on a biological resource w hich is accessed from India, including those\ndeposited in repositories outside India, or traditional knowledge associated thereto, shall obtain prior\napproval of the National Biodiversity Authority before grant of such intellectual property rights.\n(1A) Any person covered under section 7 applying for any intellectual property right, by wh"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "transliteration_bio",
+      "category": "transliteration",
+      "query": "Bharatiya jaiv sansadhanon ya paramparik gyan par bauddhik sampada ke liye rashtriya jaiv vividhata pradhikaran ki manjoori kab chahiye?",
+      "query_language": "hi-Latn",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7b79d597991ac3570050f194ec6ed027d277c3ec75501e2236fa14fcdd89ce68",
+          "document_id": "729b07e581fe55319adcbf48fadb3b7d30293033a9a1550e70fc6adfb4ecb45f",
+          "chunk_ids": [
+            "ced15e37313dff6c33565a53d15d22cfac589a45e2275bc34698cf3c0269fee0",
+            "90bc2f4c6e202d6a4a15bbd80acfbc803c6f8ae603180164ac03d1f3f452d13c"
+          ],
+          "generation": "70a7ac71359a4b0302517a2772e7964eac39700cabd34318f086b7f7a9a2c447",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 6",
+          "title": "Biological Diversity Act, 2002",
+          "evidence_excerpt": "6. Application for intellectual property rights not to be made without approval of National\nBiodiversity Authority.—1[(1) Any person or entity covered under sub -section (2) of section 3 applying\nfor an intellectual property right, by whatever name called, in or outside India, for any invention based on\nany research or information on a biological resource w hich is accessed from India, including those\ndeposited in repositories outside India, or traditional knowledge associated thereto, shall obtain prior\napproval of the National Biodiversity Authority before grant of such intellectual property rights.\n(1A) Any person covered under section 7 applying for any intellectual property right, by wh"
+        }
+      ],
+      "notes": "Authored from cited parent text. Positive judgment is provisional, other corpus parents have not been exhaustively judged."
+    },
+    {
+      "id": "difficult_short",
+      "category": "difficult",
+      "difficulty": "short",
+      "query": "GI renewal",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6957c2804ab90494e3b33640d1116c8a3fe24dd42cac6fda2b8fe560dd308555",
+          "document_id": "049515caf90026ce4d4ce34bed2059d2502326f8795f9c1da2afa60fcaff12fc",
+          "chunk_ids": [
+            "9ace5a41b85c7246dd62e97292c394b7169c02b4fac6e3bb971cc5f06ba76cfc",
+            "a532a05c09c9e5048a1c735cc7b6990701eb903ff697da33d08e59ed255fa7c5",
+            "3b1a057ec91a26d193ebd8c90866a8601553dbd6320c26a19f0c9a0da8e686d7"
+          ],
+          "generation": "caecdcbe462afdbc212ef654d9945d3c48deaabde82d8b3b9d34e24a93e01b9c",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 18",
+          "title": "Geographical Indications of Goods (Registration & Protection) Act, 1999",
+          "evidence_excerpt": "18. (1) The registration of a geographical indication shall\nbe for a period of ten years, but may be renewed from time\nto time in accordance with the provisions of this section.\n(2) The registration of an authorised user shall be for a\nperiod of ten years or for the period till the date on which\nthe registration of the geographical indication in respect of\nwhich the authorised user is registered expires, whichever\nis earlier.\n(3) The Registrar shall, on application made in the\nprescribed manner, by the registered proprietor or by the\nauthorised user and within the prescribed period and\nsubject to the payment of the prescribed fee, renew the\nregistration of the geographical indication or auth"
+        }
+      ],
+      "notes": "Sparse positive parent judgment; human adjudication pending."
+    },
+    {
+      "id": "difficult_long",
+      "category": "difficult",
+      "difficulty": "long",
+      "query": "I have created a design for an article and would like to register it in India. I want to understand whether it can be refused if it was published before filing, if it is not new or original, or if it is not significantly different from known designs. Which provision sets out these prohibitions?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7dd6f10a29d16486216da6220b82d0d258025f986afefae1f9d15885e569897f",
+          "document_id": "25d76416d93f1c4b510189f8857941a8228437f7494382b228fdbd74e9e87be5",
+          "chunk_ids": [
+            "558072176d8d3e2e0251c7d16f13d25f89b7e2af9ea988e7a8bb5e26957cb5b3"
+          ],
+          "generation": "36719a0c810c608822b0477a7f7e65953afc14145231afc85a6533e45bc8af09",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 4",
+          "title": "Designs Act, 2000",
+          "evidence_excerpt": "4. Prohibition of registration of certain designs.—A design which—\n(a) is not new or original; or\n(b) has been disclosed to the public anywhere in India or in any other country by publication in\ntangible form or by use or in any other way prior to the filing date, or where applicable, the priority\ndate of the application for registration; or\n(c) is not significantly distinguishable from known designs or combination of known designs; or\n(d) comprises or contains scandalous or obscene matter,\nshall not be registered.\n"
+        }
+      ],
+      "notes": "Sparse positive parent judgment; human adjudication pending."
+    },
+    {
+      "id": "difficult_spelling",
+      "category": "difficult",
+      "difficulty": "spelling",
+      "query": "What are the absolut grounds for refusl of trademark registraton?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6bbaa988e44649519359fcc0a05a5178db6dc000a126690a50db20476de684cb",
+          "document_id": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+          "chunk_ids": [
+            "d4638bd037f889fd19c85977fa56aaef791783af4b675cc9854c9a6c8f252ae7",
+            "cebee6d866051aea47f2f3c4466efbb063a91d3653a0ed2ffa0c96897857fcd1"
+          ],
+          "generation": "97ecd372feb6d137c0125b42c8d07821d84718a942c53edac904e01c518f6193",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 9",
+          "title": "The Trade Marks Act, 1999",
+          "evidence_excerpt": "9. Absolute grounds for refusal of registration.—(1) The trade marks—\n(a) which are devoid of any distinctive character, that is to say, not capable of distinguishing the\ngoods or services of one person from those of another person;\n(b) which consist exclusively of marks or indications which may serve in trade to designate the\nkind, quality, quantity, intended purpose, values, geographical origin or the time of production of the\ngoods or rendering of the service or other characteristics of the goods or service;\n(c) which consist exclusively of marks or indications which have become customary in the\ncurrent language or in the bona fide and established practices of the trade,\nshall not be regi"
+        }
+      ],
+      "notes": "Sparse positive parent judgment; human adjudication pending."
+    },
+    {
+      "id": "difficult_synonym",
+      "category": "difficult",
+      "difficulty": "synonym",
+      "query": "Can a previously disclosed industrial appearance be denied design registration?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7dd6f10a29d16486216da6220b82d0d258025f986afefae1f9d15885e569897f",
+          "document_id": "25d76416d93f1c4b510189f8857941a8228437f7494382b228fdbd74e9e87be5",
+          "chunk_ids": [
+            "558072176d8d3e2e0251c7d16f13d25f89b7e2af9ea988e7a8bb5e26957cb5b3"
+          ],
+          "generation": "36719a0c810c608822b0477a7f7e65953afc14145231afc85a6533e45bc8af09",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 4",
+          "title": "Designs Act, 2000",
+          "evidence_excerpt": "4. Prohibition of registration of certain designs.—A design which—\n(a) is not new or original; or\n(b) has been disclosed to the public anywhere in India or in any other country by publication in\ntangible form or by use or in any other way prior to the filing date, or where applicable, the priority\ndate of the application for registration; or\n(c) is not significantly distinguishable from known designs or combination of known designs; or\n(d) comprises or contains scandalous or obscene matter,\nshall not be registered.\n"
+        }
+      ],
+      "notes": "Sparse positive parent judgment; human adjudication pending."
+    },
+    {
+      "id": "difficult_limited_context",
+      "category": "difficult",
+      "difficulty": "limited_context",
+      "query": "How long is GI protection?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "6957c2804ab90494e3b33640d1116c8a3fe24dd42cac6fda2b8fe560dd308555",
+          "document_id": "049515caf90026ce4d4ce34bed2059d2502326f8795f9c1da2afa60fcaff12fc",
+          "chunk_ids": [
+            "9ace5a41b85c7246dd62e97292c394b7169c02b4fac6e3bb971cc5f06ba76cfc",
+            "a532a05c09c9e5048a1c735cc7b6990701eb903ff697da33d08e59ed255fa7c5",
+            "3b1a057ec91a26d193ebd8c90866a8601553dbd6320c26a19f0c9a0da8e686d7"
+          ],
+          "generation": "caecdcbe462afdbc212ef654d9945d3c48deaabde82d8b3b9d34e24a93e01b9c",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 18",
+          "title": "Geographical Indications of Goods (Registration & Protection) Act, 1999",
+          "evidence_excerpt": "18. (1) The registration of a geographical indication shall\nbe for a period of ten years, but may be renewed from time\nto time in accordance with the provisions of this section.\n(2) The registration of an authorised user shall be for a\nperiod of ten years or for the period till the date on which\nthe registration of the geographical indication in respect of\nwhich the authorised user is registered expires, whichever\nis earlier.\n(3) The Registrar shall, on application made in the\nprescribed manner, by the registered proprietor or by the\nauthorised user and within the prescribed period and\nsubject to the payment of the prescribed fee, renew the\nregistration of the geographical indication or auth"
+        }
+      ],
+      "notes": "Sparse positive parent judgment; human adjudication pending."
+    },
+    {
+      "id": "difficult_domain_terminology",
+      "category": "difficult",
+      "difficulty": "domain_terminology",
+      "query": "Approval and registration with NBA before grant of IPR arising from associated traditional knowledge",
+      "query_language": "en",
+      "expected_content_languages": [
+        "en"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7b79d597991ac3570050f194ec6ed027d277c3ec75501e2236fa14fcdd89ce68",
+          "document_id": "729b07e581fe55319adcbf48fadb3b7d30293033a9a1550e70fc6adfb4ecb45f",
+          "chunk_ids": [
+            "ced15e37313dff6c33565a53d15d22cfac589a45e2275bc34698cf3c0269fee0",
+            "90bc2f4c6e202d6a4a15bbd80acfbc803c6f8ae603180164ac03d1f3f452d13c"
+          ],
+          "generation": "70a7ac71359a4b0302517a2772e7964eac39700cabd34318f086b7f7a9a2c447",
+          "language": "en",
+          "grade": 3,
+          "locator": "Section 6",
+          "title": "Biological Diversity Act, 2002",
+          "evidence_excerpt": "6. Application for intellectual property rights not to be made without approval of National\nBiodiversity Authority.—1[(1) Any person or entity covered under sub -section (2) of section 3 applying\nfor an intellectual property right, by whatever name called, in or outside India, for any invention based on\nany research or information on a biological resource w hich is accessed from India, including those\ndeposited in repositories outside India, or traditional knowledge associated thereto, shall obtain prior\napproval of the National Biodiversity Authority before grant of such intellectual property rights.\n(1A) Any person covered under section 7 applying for any intellectual property right, by wh"
+        }
+      ],
+      "notes": "Sparse positive parent judgment; human adjudication pending."
+    },
+    {
+      "id": "noanswer_1",
+      "category": "difficult",
+      "difficulty": "out_of_scope",
+      "query": "What is the weather forecast for Tokyo tomorrow?",
+      "query_language": "en",
+      "expected_content_languages": [],
+      "label_status": "authored_provisional_manual_review_needed",
+      "no_answer": true,
+      "qrels": [],
+      "notes": "Outside the prepared legal corpus; heuristic abstention probe, not calibrated confidence."
+    },
+    {
+      "id": "noanswer_2",
+      "category": "difficult",
+      "difficulty": "out_of_scope",
+      "query": "मेरे लैपटॉप में वाईफाई कैसे चालू करूँ?",
+      "query_language": "hi",
+      "expected_content_languages": [],
+      "label_status": "authored_provisional_manual_review_needed",
+      "no_answer": true,
+      "qrels": [],
+      "notes": "Outside the prepared legal corpus; heuristic abstention probe, not calibrated confidence."
+    },
+    {
+      "id": "hi_hi_design_novelty",
+      "category": "hi_hi",
+      "query": "नए या मौलिक न होने के कारण किन डिजाइनों का रजिस्ट्रीकरण निषिद्ध है?",
+      "query_language": "hi",
+      "expected_content_languages": [
+        "hi"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7724b75b6afcbe88d7586b9e533f83747545f27cecfb45e683d7da7630a7708e",
+          "document_id": "719552bf09c7a2efc00e92e7cd2c3b4ab380f2b1f60e40440a294a5c11807e60",
+          "chunk_ids": [
+            "882bec93487f070e852b3dc6bb7fdd3e99ae8a04192d23f90371a82ae4623a95"
+          ],
+          "generation": "1f345b83db03596f542d59d7e052a8c7772a4f04b1c87d488570d63211b56a34",
+          "language": "hi",
+          "grade": 3,
+          "locator": "Section 4",
+          "title": "डिजाइन अधिनियम, 2000 (Hindi Designs Act)",
+          "evidence_excerpt": "4. कतिपय डिजाइनों के रजिस्ट्रीकरण पर प्रतिषेध--ऐसी कोई डिजाइन जो,---\n(क) नई या मूल डिजाइन नहीं है; या\n\n(ख) फाइल करने की तारीख से पूर्व या जहां लागू हो वहां, रजिस्ट्रीकरण के लिए आवेदन की पूर्विकता की तारीख\nसे पूर्व मूर्त रूप में प्रकाशन द्वा"
+        }
+      ],
+      "notes": "Grounded in OCR text of the official Hindi Designs Act scan. OCR requires comparison against the page images; other Hindi parents are not exhaustively judged."
+    },
+    {
+      "id": "hi_hi_cancel",
+      "category": "hi_hi",
+      "query": "रजिस्ट्रीकृत डिजाइन का रजिस्ट्रीकरण रद्द करने के क्या आधार हैं?",
+      "query_language": "hi",
+      "expected_content_languages": [
+        "hi"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "8c53301224a1209d85bfe88de0fc080e64a97e7f4b8ece51573208ab2dfcf217",
+          "document_id": "719552bf09c7a2efc00e92e7cd2c3b4ab380f2b1f60e40440a294a5c11807e60",
+          "chunk_ids": [
+            "46d0e8d3667e838052438b26c9502211f72ffc062d13e8eb3aa6ef4e32391498"
+          ],
+          "generation": "1f345b83db03596f542d59d7e052a8c7772a4f04b1c87d488570d63211b56a34",
+          "language": "hi",
+          "grade": 3,
+          "locator": "Section 19",
+          "title": "डिजाइन अधिनियम, 2000 (Hindi Designs Act)",
+          "evidence_excerpt": "19. रजिस्ट्रीकरण का te किया जाना--(1) कोई भी हितबद्ध व्यक्ति किसी डिजाइन के रजिस्ट्रीकरण के रद्द किए जाने के\nलिए डिजाइन के रजिस्ट्रीकरण के पश्चात्‌ किसी भी समय, निम्नलिखित आधारों में से किसी भी आधार पर नियंत्रक को याचिका प्रस्तुत\nकर सकेगा,"
+        }
+      ],
+      "notes": "Grounded in OCR text of the official Hindi Designs Act scan. OCR requires comparison against the page images; other Hindi parents are not exhaustively judged."
+    },
+    {
+      "id": "en_hi_cancel",
+      "category": "en_hi",
+      "query": "On what grounds can a registered design be cancelled by the Controller?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "hi"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "8c53301224a1209d85bfe88de0fc080e64a97e7f4b8ece51573208ab2dfcf217",
+          "document_id": "719552bf09c7a2efc00e92e7cd2c3b4ab380f2b1f60e40440a294a5c11807e60",
+          "chunk_ids": [
+            "46d0e8d3667e838052438b26c9502211f72ffc062d13e8eb3aa6ef4e32391498"
+          ],
+          "generation": "1f345b83db03596f542d59d7e052a8c7772a4f04b1c87d488570d63211b56a34",
+          "language": "hi",
+          "grade": 3,
+          "locator": "Section 19",
+          "title": "डिजाइन अधिनियम, 2000 (Hindi Designs Act)",
+          "evidence_excerpt": "19. रजिस्ट्रीकरण का te किया जाना--(1) कोई भी हितबद्ध व्यक्ति किसी डिजाइन के रजिस्ट्रीकरण के रद्द किए जाने के\nलिए डिजाइन के रजिस्ट्रीकरण के पश्चात्‌ किसी भी समय, निम्नलिखित आधारों में से किसी भी आधार पर नियंत्रक को याचिका प्रस्तुत\nकर सकेगा,"
+        }
+      ],
+      "notes": "Grounded in OCR text of the official Hindi Designs Act scan. OCR requires comparison against the page images; other Hindi parents are not exhaustively judged."
+    },
+    {
+      "id": "en_hi_novelty",
+      "category": "en_hi",
+      "query": "Which designs cannot be registered because they are not new or original?",
+      "query_language": "en",
+      "expected_content_languages": [
+        "hi"
+      ],
+      "jurisdiction": "india",
+      "label_status": "authored_provisional_manual_review_needed",
+      "qrels": [
+        {
+          "parent_id": "7724b75b6afcbe88d7586b9e533f83747545f27cecfb45e683d7da7630a7708e",
+          "document_id": "719552bf09c7a2efc00e92e7cd2c3b4ab380f2b1f60e40440a294a5c11807e60",
+          "chunk_ids": [
+            "882bec93487f070e852b3dc6bb7fdd3e99ae8a04192d23f90371a82ae4623a95"
+          ],
+          "generation": "1f345b83db03596f542d59d7e052a8c7772a4f04b1c87d488570d63211b56a34",
+          "language": "hi",
+          "grade": 3,
+          "locator": "Section 4",
+          "title": "डिजाइन अधिनियम, 2000 (Hindi Designs Act)",
+          "evidence_excerpt": "4. कतिपय डिजाइनों के रजिस्ट्रीकरण पर प्रतिषेध--ऐसी कोई डिजाइन जो,---\n(क) नई या मूल डिजाइन नहीं है; या\n\n(ख) फाइल करने की तारीख से पूर्व या जहां लागू हो वहां, रजिस्ट्रीकरण के लिए आवेदन की पूर्विकता की तारीख\nसे पूर्व मूर्त रूप में प्रकाशन द्वा"
+        }
+      ],
+      "notes": "Grounded in OCR text of the official Hindi Designs Act scan. OCR requires comparison against the page images; other Hindi parents are not exhaustively judged."
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-15",
+      "change": "Unblocked hi_hi and en_hi after OCR ingest of the Hindi Designs Act, 2000; judgments grounded in stored parent text."
+    }
+  ]
+}

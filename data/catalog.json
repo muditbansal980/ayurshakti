@@ -91,6 +91,19 @@
       "fetched_at": "2026-11-14T18:52:54.135291+00:00",
       "review_status": "needs_review",
       "version_label": "Final Act of diplomatic conference, 2024; not the full treaty text"
+    },
+    {
+      "title": "डिजाइन अधिनियम, 2000 (Hindi Designs Act)",
+      "kind": "act",
+      "jurisdiction": "india",
+      "language": "hi",
+      "version_label": "Hindi gazette scan published by IP India; Act 16 of 2000. OCR and current amendments require review.",
+      "sha256": "719552bf09c7a2efc00e92e7cd2c3b4ab380f2b1f60e40440a294a5c11807e60",
+      "source_url": "https://ipindia.gov.in/storage/uploads/docs-operator/e89d9cf5-572e-4827-ab45-fd98bcf89dc4.pdf",
+      "resolved_url": "https://ipindia.gov.in/storage/uploads/docs-operator/e89d9cf5-572e-4827-ab45-fd98bcf89dc4.pdf",
+      "source_listing_url": "https://ipindia.gov.in/designs-resources-act",
+      "fetched_at": "2026-11-15T12:41:06.326440+00:00",
+      "review_status": "needs_review"
     }
   ]
 }

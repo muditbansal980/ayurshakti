@@ -6,7 +6,7 @@ from types import SimpleNamespace
 from unittest.mock import MagicMock, patch
 
 from ip_sakti.chunking.parent_child import stable_id
-from ip_sakti.embeddings.local import LocalEmbedder, MODEL
+from ip_sakti.embeddings.local import DIMENSIONS, LocalEmbedder, MODEL, REVISION
 from ip_sakti.retrieval.search import search
 from ip_sakti.storage.ingest import ingest_prepared
 
@@ -29,9 +29,9 @@ class StorageTests(unittest.TestCase):
             (root / "manifest.json").write_text(json.dumps({"prepared": [{"bundle": "bundle.json", "generation": generation}]}))
             db = MagicMock()
             db.documents.find_one.return_value = {"active_generation": "previous-good"}
-            db.pipeline_metadata.find_one.return_value = {"model": MODEL, "revision": "revision", "dimensions": 384, "normalization": "l2", "prefixes": "e5-query-passage"}
+            db.pipeline_metadata.find_one.return_value = {"model": MODEL, "revision": REVISION, "dimensions": DIMENSIONS, "normalization": "l2", "prefixes": "e5-query-passage"}
             embedder = fake_embedder()
-            embedder.encode.side_effect = [[[0.0] * 384 for _ in range(16)], RuntimeError("simulated model failure")]
+            embedder.encode.side_effect = [[[1.0] + [0.0] * (DIMENSIONS - 1) for _ in range(16)], RuntimeError("simulated model failure")]
             with patch("ip_sakti.storage.ingest.initialize_database"), patch("ip_sakti.storage.ingest.ensure_indexes"):
                 with self.assertRaisesRegex(RuntimeError, "simulated"):
                     ingest_prepared(SimpleNamespace(processed_dir=root), db, embedder)
@@ -44,7 +44,7 @@ class StorageTests(unittest.TestCase):
             (root / "bundle.json").write_text(json.dumps({"generation": "bad", "document": {}}))
             (root / "manifest.json").write_text(json.dumps({"prepared": [{"bundle": "bundle.json", "generation": "bad"}]}))
             db = MagicMock()
-            db.pipeline_metadata.find_one.return_value = {"model": MODEL, "revision": "revision", "dimensions": 384, "normalization": "l2", "prefixes": "e5-query-passage"}
+            db.pipeline_metadata.find_one.return_value = {"model": MODEL, "revision": REVISION, "dimensions": DIMENSIONS, "normalization": "l2", "prefixes": "e5-query-passage"}
             with patch("ip_sakti.storage.ingest.initialize_database"), patch("ip_sakti.storage.ingest.ensure_indexes"):
                 with self.assertRaisesRegex(ValueError, "changed"):
                     ingest_prepared(SimpleNamespace(processed_dir=root), db, fake_embedder())
@@ -54,12 +54,14 @@ class StorageTests(unittest.TestCase):
 class RetrievalTests(unittest.TestCase):
     def test_one_whole_query_jurisdiction_and_active_generation_filters(self):
         db = MagicMock()
-        db.documents.find.return_value = [{"_id": "d", "sha256": "sha", "active_generation": "good", "title": "Act", "local_file": "act.pdf", "review_status": "verified"}]
-        db.pipeline_metadata.find_one.return_value = {"model": MODEL, "revision": "revision"}
-        db.chunks.aggregate.return_value = [{"_id": "c", "document_id": "d", "parent_id": "p", "generation": "good", "text": "Clause", "pages": [2]}]
-        db.sections.find_one.return_value = {"text": "Clause and exception", "locator": "Section 1", "pages": [2, 3]}
+        db.documents.find.return_value.max_time_ms.return_value = [{"_id": "d", "sha256": "sha", "active_generation": "good", "jurisdiction": "india", "title": "Act", "local_file": "act.pdf", "review_status": "verified"}]
+        db.pipeline_metadata.find_one.return_value = {"model": MODEL, "revision": REVISION, "dimensions": DIMENSIONS, "normalization": "l2", "prefixes": "e5-query-passage"}
+        db.chunks.aggregate.return_value = [{"_id": "c", "document_id": "d", "parent_id": "p", "generation": "good", "text": "Clause", "pages": [2], "jurisdiction": "india", "embedding": [1.0] + [0.0] * (DIMENSIONS - 1), "embedding_model": MODEL, "embedding_revision": REVISION, "embedding_dimensions": DIMENSIONS, "vector_score": 0.95}]
+        db.sections.find.return_value.max_time_ms.return_value = [{"_id": "p", "document_id": "d", "generation": "good", "text": "Clause and exception", "locator": "Section 1", "pages": [2, 3]}]
+        db.chunks.list_search_indexes.return_value = [{"queryable": True, "latestDefinition": {"fields": [{"type": "vector", "path": "embedding", "numDimensions": DIMENSIONS, "similarity": "cosine"}, {"type": "filter", "path": "generation"}, {"type": "filter", "path": "jurisdiction"}]}}]
         embedder = fake_embedder()
-        embedder.query.return_value = [0.0] * 384
+        embedder.count.return_value = 12
+        embedder.query.return_value = [1.0] + [0.0] * (DIMENSIONS - 1)
         result = search(db, embedder, "पंजीकरण के नियम क्या हैं?", jurisdiction="india", hybrid=False)
         embedder.query.assert_called_once_with("पंजीकरण के नियम क्या हैं?")
         self.assertEqual(db.documents.find.call_args.args[0]["review_status"], "verified")
@@ -70,8 +72,10 @@ class RetrievalTests(unittest.TestCase):
 
     def test_no_verified_sources_does_not_search_unreviewed_documents(self):
         db = MagicMock()
-        db.documents.find.return_value = []
-        result = search(db, fake_embedder(), "Question", jurisdiction="india")
+        db.documents.find.return_value.max_time_ms.return_value = []
+        embedder = fake_embedder()
+        embedder.count.return_value = 4
+        result = search(db, embedder, "Question", jurisdiction="india")
         self.assertEqual(result["results"], [])
         db.chunks.aggregate.assert_not_called()
 
