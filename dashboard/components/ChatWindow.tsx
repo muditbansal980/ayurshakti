@@ -24,13 +24,15 @@ export default function ChatWindow({ messages }: ChatWindowProps) {
           </span>
           <h1 className="mt-4 text-xl font-semibold text-black">How can I help you today?</h1>
           <p className="mt-1 max-w-sm text-sm text-neutral-500">
-            Ask a question, or attach a file with the + button to get started.
+            Ask any question about Indian intellectual property laws, biodiversity regulations, or Ayurveda innovation.
           </p>
         </div>
       ) : (
         <ul className="mx-auto flex max-w-3xl flex-col gap-4">
           {messages.map((message) => {
             const isUser = message.role === "user";
+            const isLoading = message.status === "pending" || message.status === "generating";
+
             return (
               <li
                 key={message.id}
@@ -40,10 +42,98 @@ export default function ChatWindow({ messages }: ChatWindowProps) {
                   className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[75%] ${
                     isUser
                       ? "rounded-br-sm bg-red-600 text-white"
-                      : "rounded-bl-sm border border-neutral-200 bg-white text-black"
+                      : "rounded-bl-sm border border-neutral-200 bg-white text-black shadow-xs"
                   }`}
                 >
-                  {message.text && <p className="whitespace-pre-wrap">{message.text}</p>}
+                  {isLoading ? (
+                    <div className="flex items-center gap-2 text-neutral-500">
+                      <svg
+                        className="h-4 w-4 animate-spin text-red-600"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                        />
+                      </svg>
+                      <span className="text-xs">
+                        {message.loadingText ?? "Searching legal documents and generating explanation…"}
+                      </span>
+                    </div>
+                  ) : (
+                    message.status !== "error" &&
+                    message.text && (
+                      <div className="whitespace-pre-wrap">{message.text}</div>
+                    )
+                  )}
+
+                  {message.status === "error" && (
+                    <p className="mt-1 text-xs text-red-600">{message.text}</p>
+                  )}
+
+                  {/* Render structured sources from RAG generation */}
+                  {!isLoading && message.sources && message.sources.length > 0 && (
+                    <div className="mt-3 border-t border-neutral-200 pt-2">
+                      <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">
+                        Sources Cited
+                      </p>
+                      <ul className="mt-1 flex flex-col gap-1.5">
+                        {message.sources.map((src) => (
+                          <li key={src.id} className="text-xs text-neutral-600">
+                            <span className="mr-1.5 inline-flex items-center rounded-sm bg-red-50 px-1 py-0.5 text-[10px] font-semibold text-red-700">
+                              [{src.id}]
+                            </span>
+                            <span className="font-medium text-neutral-800">
+                              {src.title}
+                            </span>
+                            {src.provision ? `, ${src.provision}` : ""}
+                            {src.review_status === "needs_review" && (
+                              <span className="ml-1 rounded bg-amber-50 px-1 text-[10px] text-amber-700">
+                                unreviewed
+                              </span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                      <p className="mt-2 text-[10px] italic text-neutral-400">
+                        Sources referenced from indexed legal corpus. Not personalized legal advice.
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Fallback support for legacy search citations */}
+                  {!isLoading && !message.sources && message.citations && message.citations.length > 0 && (
+                    <div className="mt-3 border-t border-neutral-200 pt-2">
+                      <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">
+                        Sources
+                      </p>
+                      <ul className="mt-1 flex flex-col gap-1">
+                        {message.citations.map((citation, index) => (
+                          <li key={index} className="text-xs text-neutral-600">
+                            <span className="font-medium text-neutral-800">
+                              {citation.title ?? "Untitled source"}
+                            </span>
+                            {citation.provision ? `, ${citation.provision}` : ""}
+                            {citation.review_status === "needs_review" && (
+                              <span className="ml-1 rounded bg-amber-50 px-1 text-[10px] text-amber-700">
+                                unreviewed
+                              </span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
 
                   {message.attachments && message.attachments.length > 0 && (
                     <ul className="mt-2 flex flex-col gap-1">
